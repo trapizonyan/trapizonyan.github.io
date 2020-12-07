@@ -1,0 +1,352 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.header::before {
+    background-color: lightblue;
+}
+
+html,
+body {
+    background: url(fon2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.content {
+    padding: 90px 10px 20px;
+    text-align: justify;
+}
+
+.conteiner {
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.content__text {
+    text-align: center;
+    padding: 20px;
+}
+
+.content__text p {
+    color: rgb(71, 71, 71);
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    padding: 20px 100px 20px 100px;
+    font-size: 20px;
+}
+
+.content__text h1 {
+    text-shadow: #606163 0px 0px 0, #646668 1px 1px 0, #76787a 2px 2px 0, #6f7072 3px 3px 0, #828486 4px 4px 0;
+    color: rgb(26, 26, 26);
+    font-family: Impact, fantasy;
+    font-size: 40px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    max-width: 75%;
+    border-width: 1px;
+}
+
+.mult {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.mult iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+    border-radius: 20px;
+}
+
+.mult-fixed {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.mult-fixed h1 {
+    text-shadow: #606163 0px 0px 0, #646668 1px 1px 0, #76787a 2px 2px 0, #6f7072 3px 3px 0, #828486 4px 4px 0;
+    color: rgb(26, 26, 26);
+    font-family: Impact, fantasy;
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#gal {
+    text-shadow: #606163 0px 0px 0, #646668 1px 1px 0, #76787a 2px 2px 0, #6f7072 3px 3px 0, #828486 4px 4px 0;
+    color: rgb(26, 26, 26);
+    font-family: Impact, fantasy;
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.carousel {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 780px;
+    padding: 10px 40px;
+    border-radius: 15px;
+    background: none;
+}
+
+.carousel img {
+    width: 700px;
+    height: 500px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25), 0 10px 15px rgba(0, 0, 0, 0.22);
+}
+
+.arrow {
+    position: absolute;
+    top: 250px;
+    padding: 0;
+    display: block;
+    background-color: rgba(121, 121, 121, 0);
+}
+
+.arrow img {
+    width: 20px;
+    height: 40px;
+    box-shadow: none;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.226);
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+.prev {
+    left: 7px;
+}
+
+.next {
+    right: 7px;
+}
+
+.gallery {
+    width: 722px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery ul {
+    height: 550px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0);
+}
+
+.gallery li {
+    display: inline-block;
+}
+
+@media(max-width:1000px) {
+    .header__menu.active,
+    .header__list li {
+        border: 2px solid lightblue;
+    }
+    .content {
+        padding: 60px 10px 10px 10px;
+    }
+    .content__text h1 {
+        font-size: 35px;
+        line-height: 100%;
+    }
+    .content__text p {
+        padding: 20px 20px 20px 20px;
+        font-size: 17px;
+        text-align: center;
+    }
+    .mult-fixed h1 {
+        font-size: 35px;
+    }
+    #gal {
+        font-size: 35px;
+    }
+    .carousel {
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        position: relative;
+        width: 580px;
+        padding: 10px 40px;
+        border-radius: 15px;
+        background: none;
+    }
+    .carousel img {
+        width: 500px;
+        height: 300px;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25), 0 10px 15px rgba(0, 0, 0, 0.22);
+    }
+    .arrow {
+        position: absolute;
+        top: 150px;
+        padding: 0;
+        display: block;
+        background-color: rgba(121, 121, 121, 0);
+    }
+    .arrow img {
+        width: 20px;
+        height: 40px;
+        box-shadow: none;
+    }
+    .arrow:focus {
+        outline: none;
+    }
+    .arrow:hover {
+        background: rgba(0, 0, 0, 0.226);
+        cursor: pointer;
+        border-radius: 9px;
+    }
+    .prev {
+        left: 7px;
+    }
+    .next {
+        right: 7px;
+    }
+    .gallery {
+        width: 510px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .gallery ul {
+        height: 320px;
+        width: 9999px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        transition: margin-left 250ms;
+        font-size: 100px;
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+@media(max-width:650px) {
+    .content {
+        padding: 60px 1px 10px 1px;
+    }
+    .content__text h1 {
+        margin-top: -20px;
+        font-size: 25px;
+        line-height: 100%;
+    }
+    .content__text p {
+        padding: 20px 6px 20px 6px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .mult-fixed {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mult-fixed h1 {
+        font-size: 25px;
+    }
+    #gal {
+        font-size: 25px;
+        padding-bottom: 7px;
+    }
+    .carousel {
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        position: relative;
+        width: 300px;
+        border-radius: 15px;
+        background: none;
+        right: 20px;
+    }
+    .carousel img {
+        width: 260px;
+        height: 160px;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22);
+    }
+    .arrow {
+        position: absolute;
+        top: 80px;
+        padding: 0;
+        display: block;
+        background-color: rgba(121, 121, 121, 0);
+    }
+    .arrow img {
+        width: 13px;
+        height: 30px;
+        box-shadow: none;
+    }
+    .arrow:focus {
+        outline: none;
+    }
+    .arrow:hover {
+        background: rgba(0, 0, 0, 0.226);
+        cursor: pointer;
+        border-radius: 9px;
+    }
+    .prev {
+        left: 20px;
+    }
+    .next {
+        right: -18px;
+    }
+    .gallery {
+        width: 265px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .gallery ul {
+        height: 167px;
+        width: 9999px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        transition: margin-left 250ms;
+        font-size: 50px;
+        color: rgba(255, 255, 255, 0);
+    }
+}

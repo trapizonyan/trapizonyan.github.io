@@ -1,0 +1,549 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.header::before {
+    background-color: rgba(7, 135, 255, 0.918);
+}
+
+@font-face {
+    font-family: fMenu;
+    /* Гарнитура шрифта */
+    src: url(fMenu.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: fDisney;
+    /* Гарнитура шрифта */
+    src: url(fDisney.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+html,
+body {
+    background: url(fon_nemo.png) no-repeat;
+    background-size: 1920px;
+    background-position: top;
+    height: 100%;
+}
+
+.content {
+    padding: 800px 10px 20px;
+    text-align: justify;
+}
+
+.conteiner {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 30px 30px 30px;
+    background-color: rgba(0, 153, 255, 0.425);
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.Name {
+    width: 100%;
+    text-align: center;
+    font-family: fMenu;
+    font-size: 55px;
+    padding: 15px 0px 55px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 7px black;
+    text-shadow: rgb(255, 255, 255) 0 0 20px;
+}
+
+.fish {
+    image-rendering: optimizeQuality;
+    float: left;
+    max-width: 1100px;
+    background-color: none;
+    margin: 0 0 90px auto;
+}
+
+.fish p {
+    max-width: 100%;
+    margin: 0px 10px 10px 160px;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 3px solid black;
+    padding: 10px 10px 10px 120px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/*----------------- MOLNIA ------------------------*/
+
+.logo_n {
+    text-align: center;
+    float: left;
+    transition: all 0.3s ease 0s;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border: 6px solid black;
+    border-radius: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.logo_n h1 {
+    font-family: fMenu;
+    font-size: 40px;
+    padding: 15px 0 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px black;
+}
+
+.logo_n img {
+    width: 160px;
+    height: 160px;
+    margin-top: 30px;
+    transition: all 0.4s ease 0s;
+}
+
+.logo_n:hover img {
+    transform: rotate(15deg);
+    transition: all 0.5s ease 0s;
+}
+
+.logo_n:hover {
+    box-shadow: 0 0 30px 7px rgb(255, 115, 0);
+    transition: all 0.3s ease 0s;
+}
+
+
+/*----------------- MOLNIA ------------------------*/
+
+
+/*----------------- SALLI ------------------------*/
+
+.logo_s {
+    text-align: center;
+    float: left;
+    transition: all 0.3s ease 0s;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    background: white;
+    border: 6px solid black;
+    border-radius: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.logo_s h1 {
+    font-family: fMenu;
+    font-size: 30px;
+    padding: 12px 0 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px black;
+}
+
+.logo_s img {
+    width: 160px;
+    height: 160px;
+    margin-top: 30px;
+    transition: all 0.4s ease 0s;
+}
+
+.logo_s:hover img {
+    transform: rotate(15deg);
+    transition: all 0.5s ease 0s;
+}
+
+.logo_s:hover {
+    box-shadow: 0 0 30px 7px rgb(0, 153, 255);
+    transition: all 0.3s ease 0s;
+}
+
+
+/*----------------- SALLI ------------------------*/
+
+
+/*----------------- METR ------------------------*/
+
+.logo_mar {
+    text-align: center;
+    float: left;
+    transition: all 0.3s ease 0s;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border: 6px solid black;
+    border-radius: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.logo_mar h1 {
+    font-family: fMenu;
+    font-size: 40px;
+    padding: 15px 0 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px black;
+}
+
+.logo_mar img {
+    width: 160px;
+    height: 160px;
+    margin-top: 30px;
+    transition: all 0.4s ease 0s;
+}
+
+.logo_mar:hover img {
+    transform: rotate(15deg);
+    transition: all 0.5s ease 0s;
+}
+
+.logo_mar:hover {
+    box-shadow: 0 0 30px 7px rgb(255, 115, 0);
+    transition: all 0.3s ease 0s;
+}
+
+
+/*----------------- METR ------------------------*/
+
+
+/*----------------- DOC ------------------------*/
+
+.logo_d {
+    text-align: center;
+    float: left;
+    transition: all 0.3s ease 0s;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border: 6px solid black;
+    border-radius: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.logo_d h1 {
+    font-family: fMenu;
+    font-size: 40px;
+    padding: 15px 0 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px black;
+}
+
+.logo_d img {
+    width: 160px;
+    height: 160px;
+    margin-top: 30px;
+    transition: all 0.4s ease 0s;
+}
+
+.logo_d:hover img {
+    transform: rotate(15deg);
+    transition: all 0.5s ease 0s;
+}
+
+.logo_d:hover {
+    box-shadow: 0 0 30px 7px rgb(0, 17, 255);
+    transition: all 0.3s ease 0s;
+}
+
+
+/*----------------- DOC ------------------------*/
+
+
+/*----------------- LUI ------------------------*/
+
+.logo_h {
+    text-align: center;
+    float: left;
+    transition: all 0.3s ease 0s;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border: 6px solid black;
+    border-radius: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.logo_h h1 {
+    font-family: fMenu;
+    font-size: 40px;
+    padding: 15px 0 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px black;
+}
+
+.logo_h img {
+    width: 160px;
+    height: 160px;
+    margin-top: 30px;
+    transition: all 0.4s ease 0s;
+}
+
+.logo_h:hover img {
+    transform: rotate(15deg);
+    transition: all 0.5s ease 0s;
+}
+
+.logo_h:hover {
+    box-shadow: 0 0 30px 7px rgb(255, 30, 0);
+    transition: all 0.3s ease 0s;
+}
+
+
+/*----------------- LUI ------------------------*/
+
+@media(max-width:1000px) {
+    .header__menu.active,
+    .header__list li {
+        border: 2px solid rgb(30, 98, 245);
+    }
+    html,
+    body {
+        background-size: 100%;
+    }
+    .content {
+        padding: 100px 0px 0px 0px;
+    }
+    .fish {
+        margin: 0 0 30px auto;
+    }
+    .fish p {
+        max-width: 100%;
+        margin: 0px 10px 10px 100px;
+        font-size: 18px;
+        border: 3px solid black;
+        padding: 10px 10px 10px 120px;
+    }
+    /*----------------- MOLNIA ------------------------*/
+    .logo_n {
+        width: 200px;
+        height: 250px;
+    }
+    .logo_n h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 2px black;
+    }
+    .logo_n img {
+        width: 130px;
+        height: 130px;
+        margin-top: 18px;
+        transition: all 0.4s ease 0s;
+    }
+    /*----------------- MOLNIA ------------------------*/
+    /*----------------- SALLI ------------------------*/
+    .logo_s {
+        width: 200px;
+        height: 250px;
+    }
+    .logo_s h1 {
+        font-size: 25px;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 2px black;
+    }
+    .logo_s img {
+        width: 130px;
+        height: 130px;
+        margin-top: 18px;
+        transition: all 0.4s ease 0s;
+    }
+    /*----------------- SALLI ------------------------*/
+    /*----------------- METR ------------------------*/
+    .logo_mar {
+        width: 200px;
+        height: 250px;
+    }
+    .logo_mar h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 2px black;
+    }
+    .logo_mar img {
+        width: 130px;
+        height: 130px;
+        margin-top: 18px;
+        transition: all 0.4s ease 0s;
+    }
+    /*----------------- METR ------------------------*/
+    /*----------------- DOC ------------------------*/
+    .logo_d {
+        width: 200px;
+        height: 250px;
+    }
+    .logo_d h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 2px black;
+    }
+    .logo_d img {
+        width: 130px;
+        height: 130px;
+        margin-top: 18px;
+        transition: all 0.4s ease 0s;
+    }
+    /*----------------- DOC ------------------------*/
+    /*----------------- LUI ------------------------*/
+    .logo_h {
+        width: 200px;
+        height: 250px;
+    }
+    .logo_h h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 2px black;
+    }
+    .logo_h img {
+        width: 130px;
+        height: 130px;
+        margin-top: 18px;
+        transition: all 0.4s ease 0s;
+    }
+    /*----------------- LUI ------------------------*/
+}
+
+@media(max-width:650px) {
+    body.lock {
+        overflow: hidden;
+    }
+    html,
+    body {
+        background-size: 100%;
+    }
+    .content {
+        padding: 100px 0px 0px 0px;
+    }
+    .conteiner {
+        padding: 10px 10px 10px;
+    }
+    .Name {
+        font-size: 30px;
+        padding: 15px 0px 20px;
+        letter-spacing: 5px;
+        -webkit-text-stroke: 4px black;
+    }
+    .fish {
+        margin: 0 0 15px auto;
+    }
+    .fish p {
+        max-width: 100%;
+        margin: 0px 10px 10px 40px;
+        font-size: 13px;
+        border: 3px solid black;
+        padding: 10px 10px 10px 60px;
+    }
+    /*----------------- MOLNIA ------------------------*/
+    .logo_n {
+        border: 3px solid black;
+        width: 100px;
+        height: 130px;
+    }
+    .logo_n h1 {
+        padding: 6px 0 0;
+        font-size: 15px;
+        letter-spacing: 1px;
+        -webkit-text-stroke: 1.2px black;
+    }
+    .logo_n img {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        transition: all 0.4s ease 0s;
+    }
+    /*----------------- MOLNIA ------------------------*/
+    /*----------------- SALLI ------------------------*/
+    .logo_s {
+        border: 3px solid black;
+        width: 100px;
+        height: 130px;
+    }
+    .logo_s h1 {
+        padding: 0px 0 0;
+        font-size: 12px;
+        letter-spacing: 1px;
+        -webkit-text-stroke: 1.2px black;
+    }
+    .logo_s img {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        transition: all 0.4s ease 0s;
+    }
+    /*----------------- SALLI ------------------------*/
+    /*----------------- METR ------------------------*/
+    .logo_mar {
+        border: 3px solid black;
+        width: 100px;
+        height: 130px;
+    }
+    .logo_mar h1 {
+        padding: 1px 0 0;
+        font-size: 14px;
+        letter-spacing: 1px;
+        -webkit-text-stroke: 1.2px black;
+    }
+    .logo_mar img {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        transition: all 0.4s ease 0s;
+    }
+    /*----------------- METR ------------------------*/
+    /*----------------- DOC ------------------------*/
+    .logo_d {
+        border: 3px solid black;
+        width: 100px;
+        height: 130px;
+    }
+    .logo_d h1 {
+        padding: 4px 0 0;
+        font-size: 15px;
+        letter-spacing: 1px;
+        -webkit-text-stroke: 1.2px black;
+    }
+    .logo_d img {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        transition: all 0.4s ease 0s;
+    }
+    /*----------------- DOC ------------------------*/
+    /*----------------- LUI ------------------------*/
+    .logo_h {
+        border: 3px solid black;
+        width: 100px;
+        height: 130px;
+    }
+    .logo_h h1 {
+        padding: 5px 0 0;
+        font-size: 15px;
+        letter-spacing: 1px;
+        -webkit-text-stroke: 1.2px black;
+    }
+    .logo_h img {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        transition: all 0.4s ease 0s;
+    }
+    /*----------------- LUI ------------------------*/
+}

@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.header::before {
+    background-color: lightblue;
+}
+
+@font-face {
+    font-family: fMenu;
+    /* Гарнитура шрифта */
+    src: url(fMenu.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: fDisney;
+    /* Гарнитура шрифта */
+    src: url(fDisney.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+html,
+body {
+    background: url(fon_pp.png) no-repeat;
+    background-size: 1920px;
+    background-position: top;
+    height: 100%;
+}
+
+.content {
+    padding: 90px 0 0;
+    text-align: justify;
+}
+
+.conteiner {
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+
+/*----------------- PERSONAGE ------------------------*/
+
+.tachki {
+    margin: auto;
+    max-width: 900px;
+    transition: 0.6s;
+    padding: 0 10px;
+    bottom: 100px;
+    padding-bottom: 40px;
+}
+
+.tachki a {
+    max-width: 900px;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-family: fMenu;
+    text-decoration: none;
+    text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.tachki img {
+    display: block;
+    max-width: 100%;
+    flex: 0 0 400px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+}
+
+.tachki:hover {
+    transform: scale(1.05);
+}
+
+.tachki:hover a {
+    text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
+    color: red;
+    transition: all 0.3s ease 0s;
+}
+
+.nemo {
+    margin: auto;
+    max-width: 900px;
+    transition: 0.6s;
+    padding: 0 10px;
+    bottom: 100px;
+    padding-bottom: 40px;
+}
+
+.nemo a {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-family: fMenu;
+    text-decoration: none;
+    text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.nemo img {
+    display: block;
+    max-width: 100%;
+    flex: 0 0 400px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+}
+
+.nemo:hover a {
+    text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
+    color: orange;
+    transition: all 0.3s ease 0s;
+}
+
+.nemo:hover {
+    transform: scale(1.05);
+}
+
+.ff {
+    margin: auto;
+    max-width: 900px;
+    transition: 0.6s;
+    padding: 0 10px;
+    bottom: 100px;
+    padding-bottom: 40px;
+}
+
+.ff a {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-family: fMenu;
+    text-decoration: none;
+    text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.ff img {
+    display: block;
+    max-width: 100%;
+    flex: 0 0 400px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+}
+
+.ff:hover a {
+    text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
+    color: yellow;
+    transition: all 0.3s ease 0s;
+}
+
+.ff:hover {
+    transform: scale(1.05);
+}
+
+.princess {
+    margin: auto;
+    max-width: 900px;
+    transition: 0.6s;
+    padding: 0 10px;
+    bottom: 100px;
+    padding-bottom: 40px;
+}
+
+.princess a {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-family: fMenu;
+    text-decoration: none;
+    text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.princess img {
+    display: block;
+    max-width: 100%;
+    flex: 0 0 400px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+}
+
+.princess:hover a {
+    text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
+    color: rgb(255, 57, 172);
+    transition: all 0.3s ease 0s;
+}
+
+.princess:hover {
+    transform: scale(1.05);
+}
+
+
+/*----------------- PERSONAGE ------------------------*/
+
+@media(max-width:1000px) {
+    .header__menu.active,
+    .header__list li {
+        border: 2px solid lightblue;
+    }
+    body.lock {
+        overflow: hidden;
+    }
+    html,
+    body {
+        background-size: 1000px;
+    }
+    .content {
+        padding: 60px 0px 0px 0px;
+    }
+    .tachki a {
+        font-size: 25px;
+    }
+    .nemo a {
+        font-size: 25px;
+    }
+    .ff a {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="general.css">
+    <meta name="viewport" content="width=device-width">
+    <title>Disney characters</title>
+</head>
+
+<body>
+    <h2></h2>
+    <!--Оболочка для демонстрации-->
+    <div class="wrapper">
+        <header class="header">
+            <div class="conteiner_m">
+                <div class="header__body">
+
+
+                    <a href="personage.html" class="header__link1">Персонажи</a>
+
+                    <a href="general.html" class="header__logo">
+                        Disney
+                    </a>
+
+
+                    <a href="info.html" class="header__link2">Информация</a>
+
+
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+
+                        <ul class="header__list">
+
+                            <li class="two">
+                                <a href="general.html" class="header__link">Главная</a>
+                            </li>
+
+                            <li class="three">
+                                <a href="personage.html" class="header__link">Персонажи</a>
+                            </li>
+                            <li class="four">
+                                <a href="info.html" class="header__link">Информация</a>
+                            </li>
+
+
+                        </ul>
+
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="conteiner">
+                <div class="content__text">
+                    <h1>Как Уолт Дисней создавал героев своих мультфильмов</h1>
+                    <p>
+                        У Уолта Диснея была плодотворная творческая жизнь: мультпликатор поработал над сотнями фильмов как продюсер и сценарист. Его собственная компания «Walt Disney Productions» со временем превратилась в настоящую развлекательную империю. А некоторые нарисованные
+                        Диснеем персонажи пережили его самого и до сих пор появляются на телеэкранах всего мира. У каждого из этих героев есть своя увлекательная история создания.
+                    </p>
+
+                </div>
+                <hr>
+                <div class="mult-fixed">
+                    <h1>Мультачки-Байки Мэтра</h1>
+                    <div class="mult">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DUegDl8swew" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <hr>
+                <h1 id="gal">Галерея</h1>
+                <div id="carousel" class="carousel">
+
+                    <button class="arrow prev" onclick="flip()"><img src="left.png"></button>
+                    <div class="gallery">
+                        <ul class="images">
+                            <li><img src="ga1.jpg"></li>
+                            <li><img src="ga2.jpg"></li>
+                            <li><img src="ga3.jpg"></li>
+                            <li><img src="ga4.jpg"></li>
+                            <li><img src="ga5.jpg"></li>
+                            <li><img src="ga6.jpg"></li>
+                            <li><img src="ga7.jpg"></li>
+                            <li><img src="ga8.jpg"></li>
+                            <li><img src="ga9.jpg"></li>
+                            <li><img src="ga10.jpg"></li>
+                            <li><img src="ga11.jpg"></li>
+                            <li><img src="ga12.jpg"></li>
+                        </ul>
+                    </div>
+                    <button class="arrow next" onclick="flip()"><img src="right.png"></button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--Подключение jQuerty-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Подключаение файла js-->
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
