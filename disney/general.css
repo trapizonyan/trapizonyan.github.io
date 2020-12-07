@@ -11,6 +11,16 @@
     background-color: lightblue;
 }
 
+@font-face {
+    font-family: CSM;
+    src: url(CSM.ttf);
+}
+
+@font-face {
+    font-family: impact_f;
+    src: url(impact_f.ttf);
+}
+
 html,
 body {
     background: url(fon2.jpg) no-repeat center center fixed;
@@ -41,7 +51,7 @@ body {
 
 .content__text p {
     color: rgb(71, 71, 71);
-    font-family: fDisney;
+    font-family: CSM, cursive;
     padding: 20px 100px 20px 100px;
     font-size: 20px;
 }
@@ -95,7 +105,7 @@ hr {
 .mult-fixed h1 {
     text-shadow: #606163 0px 0px 0, #646668 1px 1px 0, #76787a 2px 2px 0, #6f7072 3px 3px 0, #828486 4px 4px 0;
     color: rgb(26, 26, 26);
-    font-family: Impact, fantasy;
+    font-family: impact_f;
     font-size: 40px;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -104,7 +114,7 @@ hr {
 #gal {
     text-shadow: #606163 0px 0px 0, #646668 1px 1px 0, #76787a 2px 2px 0, #6f7072 3px 3px 0, #828486 4px 4px 0;
     color: rgb(26, 26, 26);
-    font-family: Impact, fantasy;
+    font-family: impact_f;
     font-size: 40px;
     padding-bottom: 20px;
     padding-top: 20px;
