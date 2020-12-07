@@ -41,7 +41,7 @@ body {
 
 .content__text p {
     color: rgb(71, 71, 71);
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: CSM, cursive;
     padding: 20px 100px 20px 100px;
     font-size: 20px;
 }
