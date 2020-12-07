@@ -21,6 +21,16 @@
     /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+    font-family: CSM;
+    src: url(CSM.ttf);
+}
+
+@font-face {
+    font-family: impact_f;
+    src: url(impact_f.ttf);
+}
+
 html,
 body {
     height: 100%;
